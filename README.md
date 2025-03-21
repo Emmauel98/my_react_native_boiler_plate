@@ -1,51 +1,132 @@
-# Welcome to your Expo app 👋
+# 🚀 React Native Expo Boilerplate
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A powerful React Native Expo boilerplate designed by me to help developers skip setup and focus on building amazing applications.
 
-## Get started
+## ✨ Features
+- Pre-configured folder structure  
+- Essential packages installed  
+- Optimized development experience  
+- Ready-to-use navigation and state management  
+- ESLint, Prettier, and Husky for clean code  
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 📦 Installation
 
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+### 1️⃣ Clone the repository
+```sh
+git clone https://github.com/your-username/your-boilerplate.git
+cd your-boilerplate
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2️⃣ Install dependencies
+Using npm:
+```sh
+npm install
+```
+Or using Yarn:
+```sh
+yarn install
+```
 
-## Learn more
+### 3️⃣ Start the development server
+```sh
+npm start
+```
+Or:
+```sh
+yarn start
+```
+Expo will open a QR code in the terminal or browser. Scan it with your mobile device using the Expo Go app.
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 🛠️ Folder Structure
+```plaintext
+📂 your-boilerplate
+ ┣ 📂 src
+ ┃ ┣ 📂 components      # Reusable UI components
+ ┃ ┣ 📂 screens         # Application screens
+ ┃ ┣ 📂 navigation      # React Navigation setup
+ ┃ ┣ 📂 hooks           # Custom hooks
+ ┃ ┣ 📂 store           # State management
+ ┃ ┣ 📂 services        # Api services
+ ┃ ┣ 📂 constant        # Some constants used across the whole app
+ ┃ ┣ 📂 context         # Context folder
+ ┃ ┣ 📂 pages           # Pages
+ ┃ ┣ 📂 utils           # Utility functions
+ ┃ ┣ 📂 assets          # Images, fonts, and icons
+ ┣ 📂 config            # API and environment configuration
+ ┣ 📂 scripts           # Custom scripts for automation
+ ┣ 📜 App.tsx           # Main app entry file
+ ┣ 📜 package.json      # Project dependencies
+```
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## 📌 Built-in Packages
+The boilerplate comes with essential libraries pre-installed:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# my_react_native_boiler_plate
+| Feature | Package |
+|---------|---------|
+| Navigation | `@react-navigation/native` |
+| State Management | `react-query` (or Redux if added) |
+| Forms & Validation | `react-hook-form` + `yup` |
+| HTTP Requests | `axios` |
+| UI Components | `react-native-paper` or `react-native-elements` |
+| TypeScript Support | `typescript` |
+| Linting & Formatting | `eslint`, `prettier`, `husky` |
+
+---
+
+## 📖 Usage Guide
+
+### Adding New Screens
+1. Create a new file inside `src/screens/`
+2. Example: `ProfileScreen.tsx`
+```tsx
+import { View, Text } from "react-native";
+
+export default function ProfileScreen() {
+  return (
+    <View>
+      <Text>Profile Screen</Text>
+    </View>
+  );
+}
+```
+3. Register it in `navigation/AppNavigator.tsx`
+
+---
+
+### Customizing Theme
+Modify `theme.ts` in the `config` folder:
+```tsx
+export const theme = {
+  colors: {
+    primary: "#3498db",
+    secondary: "#2ecc71",
+    background: "#f5f5f5",
+  },
+};
+```
+
+---
+
+## 📢 Contributing
+Want to improve this boilerplate? Follow these steps:
+1. Fork the repo
+2. Create a feature branch (`git checkout -b feature-name`)
+3. Commit changes (`git commit -m "Added new feature"`)
+4. Push to GitHub (`git push origin feature-name`)
+5. Create a Pull Request
+
+---
+
+## 📄 License
+This project is licensed under the **MIT License**.
+
+---
+
+### 🚀 Start Building Faster with This Boilerplate!
+Let me know if you need further improvements! 🚀🔥
